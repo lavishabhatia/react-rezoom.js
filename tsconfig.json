@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "es5", // Set the target ECMAScript version
+      "lib": ["dom", "dom.iterable", "esnext"], // Include necessary libraries
+      "allowJs": true, // Allow compiling JavaScript files (optional)
+      "skipLibCheck": true, // Skip type checking for built-in library types
+      "esModuleInterop": true, // Allow importing ES modules from CommonJS modules
+      "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+      "strict": true, // Enable strict type checking
+      "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing
+      "module": "commonjs", // Set the module format for the bundle (commonjs for npm packages)
+      "outDir": "lib", // Output compiled files to a separate "lib" directory
+      "declaration": true, // Generate type declaration files (.d.ts)
+      "jsx": "react-jsx"
+    },
+    "include": ["src"] // Include the "src" directory for compilation
+  }
+  

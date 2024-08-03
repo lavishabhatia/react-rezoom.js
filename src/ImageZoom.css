@@ -1,0 +1,55 @@
+.image-zoom-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    position: relative;
+  }
+  
+  .indicator {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .image-preview {
+    position: absolute;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .image-zoom-container:hover .image-preview {
+    display: block;
+  }
+  
+  .left-negative-120 {
+    left: -120%;
+  }
+  
+  .right-positive-120 {
+    right: -120%;
+    top: 0;
+  }
+  
+  .top-negative-120 {
+    top: -120%;
+  }
+  
+  .bottom-negative-120 {
+    bottom: -120%;
+  }
+  
+  .image-container {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
