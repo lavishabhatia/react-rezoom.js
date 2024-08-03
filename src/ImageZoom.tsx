@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import "./ImageZoom.css"; // Make sure to create and import your CSS file
 
+import PropTypes from "prop-types";
+
 interface ImageZoomProps {
   src: string;
   previewPosition?: "left" | "right" | "top" | "bottom";
@@ -72,15 +74,9 @@ export default function ImageZoom({
     <div className="image-zoom-container">
       <div className="hover-item" ref={hoverItemRef} id="hover">
         <img src={src} alt="Image Description" />
-        <div
-          id="indicator"
-          className="indicator"
-          ref={indicatorRef}
-        ></div>
+        <div id="indicator" className="indicator" ref={indicatorRef}></div>
       </div>
-      <div
-        className={`image-preview ${position[previewPosition]}`}
-      >
+      <div className={`image-preview ${position[previewPosition]}`}>
         <div
           id="image-container"
           className="image-container"
