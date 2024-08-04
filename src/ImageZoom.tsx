@@ -1,8 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./ImageZoom.css"; // Make sure to create and import your CSS file
 
-import PropTypes from "prop-types";
-
 interface ImageZoomProps {
   src: string;
   previewPosition?: "left" | "right" | "top" | "bottom";

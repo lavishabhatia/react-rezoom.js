@@ -1,39 +1,18 @@
 {
   "compilerOptions": {
-    /* Language and Environment */
-    "target": "esnext",
-    "jsx": "react-jsx",
-
-    /* Modules */
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["es5", "ES2015", "es2016", "DOM", "ESNext", "ES2021"],
     "module": "ESNext",
     "moduleResolution": "Node",
-
-    /* JavaScript Support */
-    "allowJs": false,
-    "maxNodeModuleJsDepth": 1,
-
-    /* Emit */
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "sourceMap": true,
-    "outDir": "dist",
-    "declarationDir": "types",
-
-    /* Interop Constraints */
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-
-    /* Type Checking */
-    "strict": true,
+    "noImplicitAny": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "allowUnreachableCode": false,
-
-    /* Completeness */
-    "skipLibCheck": true
-  }
+    "outDir": "dist/esm",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6"
+},
+  "include": ["src"]
 }
